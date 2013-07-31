@@ -11,55 +11,58 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
     <body>
-        <!-- Wrap all page content here -->
-        <div id="wrap">
+    <!-- Wrap all page content here -->
+    <div id="wrap">
 
-            <!-- Begin page content -->
-            <div class="container">
-                <div class="page-header">
-                    <h1>VN-CODING.COM</h1>
-                </div>
-                <p class="lead">VN-Coding nơi quy tụ cộng đồng lập trình viên lớn nhất tại Việt Nam. Phục vụ cho việc hướng dẫn và phát triển các ngôn ngữ, công nghệ, kỹ năng trong lập trình. Chúng tôi sẽ sớm ra mắt trong thời gian gần nhất!</p>
-                <p>Hãy <a href="http://facebook.com/vncoding">"Like"</a> fanpage của VN-Coding, để cập nhật những công nghệ mới nhất ngay hôm nay.</p>
+        <!-- Begin page content -->
+        <div class="container">
+            <div class="page-header">
+                <h1>VN-CODING.COM</h1>
             </div>
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=150754891796263";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+            <p class="lead">VN-Coding nơi quy tụ cộng đồng lập trình viên lớn nhất tại Việt Nam. Phục vụ cho việc hướng dẫn và phát triển các ngôn ngữ, công nghệ, kỹ năng trong lập trình. Chúng tôi sẽ sớm ra mắt trong thời gian gần nhất!</p>
+            <p>Hãy <a href="http://facebook.com/vncoding">"Like"</a> fanpage của VN-Coding, để cập nhật những công nghệ mới nhất ngay hôm nay.</p>
         </div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=150754891796263";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
 
-        <div id="footer">
-            <div class="container">
-                <p class="text-muted credit">&copy; 2013 by <a href="http://vn-coding.com">vn-coding.com</a></p>
-            </div>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted credit">&copy; 2013 by <a href="http://vn-coding.com">vn-coding.com</a></p>
         </div>
+    </div>
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-40135280-2'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq=[['_setAccount','UA-40135280-2'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+    </script>
 
         <!-- build:js scripts/main.js -->
-        <!--<script src="bower_components/jquery/jquery.min.js"></script>-->
-        <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+        <script src="bower_components/jquery/jquery.js"></script>
         <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(.tmp) scripts/coffee.js -->
+        <script src="scripts/hello.js"></script>
         <!-- endbuild -->
 </body>
 </html>
